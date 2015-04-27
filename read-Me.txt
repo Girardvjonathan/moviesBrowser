@@ -1,0 +1,3 @@
+For this project to work you will need to install gulp
+ and execute in the command line '
+gulp watch' in the root of the project for the script to build static file

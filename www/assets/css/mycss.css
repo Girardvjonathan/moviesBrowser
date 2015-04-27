@@ -1,0 +1,113 @@
+.search {
+    float: right;
+    margin-top:13px;
+}
+
+.toggleSearchPage {
+    position: absolute;
+    top: 147px;
+    right: 280px;
+}
+
+.content {
+    padding: 0% 10% 20% 10%;
+}
+
+.container {
+    margin-left: 10%;
+    padding-left: 0px;
+}
+
+.pagination {
+    background-color: #3F1F1C;
+    color: #F2D18E;
+    text-align: center;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: #8B292C;
+}
+
+.pager li > a, .pager li > span {
+    border: 1px solid #097068;
+    border-radius: 15px;
+    list-style: none;
+    background-color: #3F1F1C;
+    display: inline-block;
+    padding: 5px 14px;
+}
+
+.pager li > a:hover, .pager li > span {
+    background-color: #8B292C;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+    background-color: #8B292C;
+}
+
+#loaderDiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100;
+    background-color: white;
+    opacity: .6;
+}
+
+.ajax-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px; /* -1 * image width / 2 */
+    margin-top: -32px; /* -1 * image height / 2 */
+    display: block;
+}
+
+.title {
+    margin: 10px 0 20px;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    color: #3F1F1C;
+}
+
+.about {
+    position: relative;
+    top: 50px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.body {
+    background-color: #8B292C;
+}
+
+.search {
+    border: 1px solid #097068;
+    background-color: #3F1F1C;
+    color: #F2D18E;
+}
+
+.navigationTop {
+    background-color: #3F1F1C;
+}
+
+.tabElement {
+    background-color: #3F1F1C;
+    color: #F2D18E;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #3F1F1C;
+    color: #F2D18E;
+}
+
+.summary {
+    background-color: #F17A32;
+}

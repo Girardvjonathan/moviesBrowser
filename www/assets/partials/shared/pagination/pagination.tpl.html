@@ -1,0 +1,42 @@
+<div id="pager">
+    <ul>
+        <li>
+            <a id="pagerPrevious" class="pagination" href="" aria-label="Previous" ng-click="onChange({number: 0})">
+                <b> <span aria-hidden="true">&laquo;</span></b>
+            </a>
+        </li>
+        <!-- Numbered page links -->
+        <li ng-class="{bold: pageNumber1 === page}">
+            <a class="pagination" href="" ng-click="onChange({number: pageNumber1})">
+                {{pageNumber1}}
+            </a>
+        </li>
+        <li ng-class="{bold: pageNumber2 === page}" ng-if="maxPage>1">
+            <a class="pagination"href="" ng-click="onChange({number: pageNumber2})">
+                {{pageNumber2}}
+            </a>
+        </li>
+        <li ng-class="{bold: pageNumber3 === page}" ng-if="maxPage>2">
+            <a class="pagination"href="" ng-click="onChange({number: pageNumber3})">
+                {{pageNumber3}}
+            </a>
+        </li>
+        <li ng-class="{bold: pageNumber4 === page}" ng-if="maxPage>3">
+            <a class="pagination"href="" ng-click="onChange({number: pageNumber4})">
+                {{pageNumber4}}
+            </a>
+        </li>
+        <li ng-class="{bold: pageNumber5 === page}" ng-if="maxPage>4">
+            <a class="pagination"href="" ng-click="onChange({number: pageNumber5})">
+                {{pageNumber5}}
+            </a>
+        </li>
+        <!-- Next page link -->
+        <li>
+            <a id="pagerNext" class="pagination" href="#" aria-label="Next" ng-click="onChange({number: 6})">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        <li>
+    </ul>
+</div>
