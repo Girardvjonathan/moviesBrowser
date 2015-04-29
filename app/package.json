@@ -1,5 +1,5 @@
 {
-  "name": "Metrics",
+  "name": "moviesBrowser",
   "version": "0.0.1",
   "main": "app.module.js",
   "dependencies": {
