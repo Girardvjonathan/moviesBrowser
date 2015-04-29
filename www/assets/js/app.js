@@ -272,7 +272,7 @@
  * Created by jgirard-viau on 2/4/15.
  */
 (function () {
-    angular.module('shared').directive('pagination', Pagination);
+    angular.module('shared').directive('myPagination', Pagination);
     function Pagination(){
         return {
             restrict: 'E',
