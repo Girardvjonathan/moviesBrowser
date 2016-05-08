@@ -1,0 +1,24 @@
+{
+  "name": "movies_browser",
+  "version": "1.0.0",
+  "description": "A simple angular application to browse the movie database api",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Girardvjonathan/moviesBrowser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Girardvjonathan/moviesBrowser/issues"
+  },
+  "homepage": "https://github.com/Girardvjonathan/moviesBrowser#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  }
+}
