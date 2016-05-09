@@ -3,9 +3,9 @@
 
     angular
         .module('app')
-        .controller('mediaCtrl', ['$http', '$stateParams', '$state', '$modal','$q', Media]);
+        .controller('mediaCtrl', ['$http', '$stateParams', '$state','$q', Media]);
 
-    function Media($http, $stateParams, $state, $modal, $q) {
+    function Media($http, $stateParams, $state, $q) {
         var vm = this;
         var search = $stateParams.query;
         var page = $stateParams.page;
@@ -103,21 +103,21 @@
             return deferred.promise;
         };
 
-        vm.open = function (mediaId) {
-            // We have to wait until the API call has been made
-            vm.getMoreInfo(mediaId).then(function (data) {
-                var modalInstance = $modal.open({
-                    controller: "modalDescriptionCtrl as description",
-                    templateUrl: 'assets/partials/components/movie/description/description.tpl.html',
-                    resolve: {
-                        media: function()
-                        {
-                            return data;
-                        }
-                    }
-                });
-            });
-        };
+        //vm.open = function (mediaId) {
+        //    // We have to wait until the API call has been made
+        //    vm.getMoreInfo(mediaId).then(function (data) {
+        //        var modalInstance = $modal.open({
+        //            controller: "modalDescriptionCtrl as description",
+        //            templateUrl: 'assets/partials/components/movie/description/description.tpl.html',
+        //            resolve: {
+        //                media: function()
+        //                {
+        //                    return data;
+        //                }
+        //            }
+        //        });
+        //    });
+        //};
 
         vm.init();
 

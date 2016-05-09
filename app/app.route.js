@@ -16,6 +16,11 @@
                     templateUrl: 'assets/partials/components/movie/movie.tpl.html',
                     controller: 'mediaCtrl as media'
                 })
+                .state('tvFeature', {
+                    url: '/tv/',
+                    templateUrl: 'assets/partials/components/tvshow/tv.tpl.html',
+                    controller: 'mediaCtrl as media'
+                })
                 .state('tv', {
                     url: '/tv/:query/{page:[0-9]{1,8}}',
                     templateUrl: 'assets/partials/components/tvshow/tv.tpl.html',

@@ -1,9 +1,0 @@
-{
-  "name": "moviesBrowser",
-  "version": "0.0.1",
-  "main": "app.module.js",
-  "dependencies": {
-    "gulp": "~3.8.10",
-    "gulp-concat": "~2.4.3"
-  }
-}

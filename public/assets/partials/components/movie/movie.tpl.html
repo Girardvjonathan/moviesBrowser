@@ -1,6 +1,6 @@
 <div class="row" ng-repeat="(rowIndex,movie) in media.media | filter:searchFilter as elem"
      ng-if="rowIndex % 4 == 0">
-    <div class="col-md-3 " ng-repeat="elIdx in [0,1,2,3]" ng-if="elem[rowIndex+elIdx]" ng-click="media.open(elem[rowIndex+elIdx].id)">
+    <div class="col-md-3 " ng-repeat="elIdx in [0,1,2,3]" ng-if="elem[rowIndex+elIdx]" ng-click="">
         <h3 class="title">{{elem[rowIndex+elIdx].title}}</h3>
         <img class="img-responsive portfolio-item resultImage"
              ng-src="{{media.getPosterMedium(elem[rowIndex+elIdx].poster_path)}}" alt="">

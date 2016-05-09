@@ -1,0 +1,30 @@
+{
+  "name": "movies_browser",
+  "description": "A simple angular application to browse the movie database api",
+  "main": "gulpfile.js",
+  "authors": [
+    "Jonathan Girard Viau <girardvjonathan@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Girardvjonathan/moviesBrowser",
+  "moduleType": [],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "moment": "~2.10.6",
+    "angular-ui-router": "~0.2.15",
+    "ui-bootstrap": "~1.3.2",
+    "geocomplete": "~1.6.5",
+    "font-awesome": "~4.5.0",
+    "notifyJS": "git+https://github.com/notifyjs/notifyjs.git#0.3.3",
+    "angular": "~1.5.5",
+    "jquery": "~2.2.3",
+    "angular-bootstrap": "^1.3.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

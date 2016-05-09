@@ -2,7 +2,7 @@
   "name": "movies_browser",
   "version": "1.0.0",
   "description": "A simple angular application to browse the movie database api",
-  "main": "gulpfile.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,16 @@
   },
   "homepage": "https://github.com/Girardvjonathan/moviesBrowser#readme",
   "dependencies": {
-    "angular": "^1.5.5",
+    "bower": "^1.7.9",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0"
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-main-bower-files": "^1.5.0",
+    "run-sequence": "^1.1.5",
+    "body-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^2.1.3",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1"
   }
 }
