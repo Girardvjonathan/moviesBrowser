@@ -4,6 +4,8 @@
   "description": "A simple angular application to browse the movie database api",
   "main": "server.js",
   "scripts": {
+    "prestart": "bower install",
+    "postinstall": "node_modules/.bin/gulp init"
   },
   "repository": {
     "type": "git",
