@@ -46,6 +46,7 @@ gulp.task('init', function () {
 });
 
 gulp.task('serve', function () {
+    runSequence('copy', 'concat', 'bower_components');
     browserSync({
         notify: false,
         port: 9020,
