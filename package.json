@@ -4,6 +4,7 @@
   "description": "A simple angular application to browse the movie database api",
   "main": "server.js",
   "scripts": {
+    "postinstall": ".init_heroku"
   },
   "repository": {
     "type": "git",
