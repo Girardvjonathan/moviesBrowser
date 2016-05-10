@@ -1,16 +1,17 @@
-var gulp       = require('gulp');
-var concat     = require('gulp-concat');
+var gulp = require('gulp');
+var concat = require('gulp-concat');
 var runSequence = require('run-sequence');
 var mainBowerFiles = require('gulp-main-bower-files');
 var gulpFilter = require('gulp-filter');
+var browserSync = require('browser-sync');
 
-gulp.task('concat', function() {
+gulp.task('concat', function () {
     gulp.src('app/**/*.js')
         .pipe(concat('app.js'))
         .pipe(gulp.dest('public/assets/js'));
 });
 
-gulp.task('copy', function() {
+gulp.task('copy', function () {
     gulp.src('app/**/*.css')
         .pipe(gulp.dest('public/assets/css'));
     gulp.src('app/**/*.html')
@@ -22,7 +23,7 @@ gulp.task('bower_components', function () {
     return gulp.src('./bower.json')
         .pipe(mainBowerFiles({
             overrides: {
-                "moment":{
+                "moment": {
                     main: [
                         "moment.js",
                         "locale/*.js",
@@ -30,7 +31,7 @@ gulp.task('bower_components', function () {
                         "min/moment-with-locales.min.js"
                     ]
                 },
-                "bootstrap":{
+                "bootstrap": {
                     main: [
                         "dist/js/boostrap.js",
                         "dist/css/*"
@@ -40,8 +41,21 @@ gulp.task('bower_components', function () {
         }))
         .pipe(gulp.dest('public/bower_components'));
 });
-gulp.task('init',function(){
+gulp.task('init', function () {
     runSequence('copy', 'concat', 'bower_components');
+});
+
+gulp.task('serve', function () {
+    browserSync({
+        notify: false,
+        port: 9020,
+        server: {
+            baseDir: ['public'],
+            routes: {
+                '/bower_components': 'bower_components'
+            }
+        }
+    })
 });
 
 //not working
