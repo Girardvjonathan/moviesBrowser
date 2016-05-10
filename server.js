@@ -18,5 +18,5 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'})); // parse applicati
 app.use(methodOverride());
 
 // listen (start app with node server.js) ======================================
-app.listen(8008);
-console.log("App listening on port 8008");
+app.listen(80);
+console.log("App listening on port 80");
